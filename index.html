@@ -17,53 +17,83 @@
     <nav id='navigation-menu'>
       <ul>
         <li class='nav-menu-item'>
-          <img src='assets/overview.svg' alt='overview'>
           <a href="#">
+            <img src='assets/overview.svg' alt='overview'>
             Overview</a>
         </li>
         <li class='nav-menu-item'>
-          <img src='assets/calendar.svg' alt='tasks'>
-          <a href="#">Tasks</a>
+          <a href="#">
+            <img src='assets/calendar.svg' alt='tasks'>
+            Tasks
+          </a>
         </li>
         <li class='nav-menu-item'>
-          <img src='assets/file.svg' alt='documents'>
-          <a href="#">Documents</a>
+          <a href="#">
+            <img src='assets/file.svg' alt='documents'>
+            Documents
+          </a>
+        </li>
+        <li class='nav-menu-item nav-menu-item--active'>
+          <a href="#">
+            <img src='assets/files.svg' alt='notes'>
+            Notes
+          </a>
         </li>
         <li class='nav-menu-item'>
-          <img src='assets/files.svg' alt='notes'>
-          <a href="#">Notes</a>
+          <a href="#">
+            <img src='assets/graph.svg' alt='output'>
+            Output
+          </a>
         </li>
         <li class='nav-menu-item'>
-          <img src='assets/graph.svg' alt='output'>
-          <a href="#">Output</a>
-        </li>
-        <li class='nav-menu-item'>
-          <img src='assets/support.svg' alt='support'>
-          <a href="#">Support</a>
+          <a href="#">
+            <img src='assets/support.svg' alt='support'>
+            Support
+          </a>
         </li>
       </ul>
     </nav>
     <hr class='sidebar-divider' />
 
-    <ul id='note-types'>
-      <li>
-        <div class='note-type-color' data-color='projects'></div>
-        <p>Projects</p>
-      </li>
-      <li>
-        <div class='note-type-color' data-color='business'></div>
-        <p>Business</p>
-      </li>
-      <li>
-        <div class='note-type-color' data-color='personal'></div>
-        <p>Personal</p>
-      </li>
-      <li>
-        <button>+ Add new</button>
-      </li>
-    </ul>
+    <section  id='note-types'>
+      <ul>
+        <li>
+          <div class='note-type-color' data-color='projects'></div>
+          <p>Projects</p>
+        </li>
+        <li>
+          <div class='note-type-color' data-color='business'></div>
+          <p>Business</p>
+        </li>
+        <li>
+          <div class='note-type-color' data-color='personal'></div>
+          <p>Personal</p>
+        </li>
+        <li>
+          <button>
+            <img src='assets/plus.svg' alt='notes'>
+            Add new
+          </button>
+        </li>
+      </ul>
+    </section>
 
     <hr class='sidebar-divider' />
+
+    <footer>
+      <div id='socials'>
+        <a href="https://www.facebook.com/simplytech.co" target='_blank'>
+          <img src='assets/facebook.svg' alt='facebook'>
+        </a>
+        <a href="https://x.com/CodingSimply" target='_blank'>
+          <img src='assets/twitter.svg' alt='twitter'>
+        </a>
+        <a href="https://www.linkedin.com/company/simply-technologies" target='_blank'>
+          <img src='assets/linkedin.svg' alt='linkedin'>
+        </a>
+      </div>
+      <p id='footer-text'>2025 All rights reserved</p>
+    </footer>
   </aside>
   <main>
 
