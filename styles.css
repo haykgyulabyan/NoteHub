@@ -66,11 +66,11 @@ header {
 
 .nav-menu-item {
     height: 50px;
-
 }
 
 .nav-menu-item img {
     height: 25px;
+    margin-right: 10px;
 }
 
 .nav-menu-item a {
@@ -336,6 +336,41 @@ main {
 .notes-grid {
     scrollbar-width: thin;
     scrollbar-color: var(--medium-purpule) transparent;
+}
+
+@media screen and (max-width: 900px) {
+    .sidebar {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    #new-note, .user-info span, #notifications {
+        display: none;
+    }
+
+    .search-bar input {
+        width: 100px;
+    }
+
+    #filters-section>button {
+        font-size: 12px;
+    }
+
+    .filters {
+        gap: 6px;
+    }
+
+    .filter-btn {
+        width: unset;
+        padding: 4px 8px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .note-card {
+        width: 100%;
+    }
 }
 
 
