@@ -9,10 +9,10 @@
 <body>
 <div class='page-container'>
   <aside class='sidebar'>
-    <div class='sidebar-header'>
+    <header id='sidebar-header'>
       <div id='placeholder-circle'></div>
       <div id='placeholder-rectangle'></div>
-    </div>
+    </header>
 
     <nav id='navigation-menu'>
       <ul>
@@ -95,8 +95,22 @@
       <p id='footer-text'>2025 All rights reserved</p>
     </footer>
   </aside>
-  <main>
 
+  <main>
+    <header class='main-header'>
+      <div class='search-bar'>
+        <label for='search-input'><img src='assets/search.svg' alt='Search'></label>
+        <input id="search-input" type='text' placeholder='Search'>
+      </div>
+      <div class='user-info'>
+        <img src='assets/user-avatar.jpeg' alt='User Avatar' class='user-avatar'>
+        <span>Hello, Peter!</span>
+        <div id='notifications'>
+          <img src='assets/bell.svg' alt='Notifications'>
+          <span id='unseen-notification'></span>
+        </div>
+      </div>
+    </header>
   </main>
 </div>
 </body>
