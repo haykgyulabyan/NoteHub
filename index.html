@@ -5,113 +5,129 @@
   <meta name='viewport' content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0'>
   <title>NoteHub</title>
   <link rel='stylesheet' href='styles.css'>
+  <link rel='icon' type='image/x-icon' href='favicon.ico'>
 </head>
 <body>
-<div class='page-container'>
-  <aside class='sidebar'>
-    <header id='sidebar-header'>
-      <div id='placeholder-circle'></div>
-      <div id='placeholder-rectangle'></div>
-    </header>
+  <div class='page-container'>
+    <aside class='sidebar'>
+      <header id='sidebar-header'>
+        <div id='placeholder-circle'></div>
+        <div id='placeholder-rectangle'></div>
+      </header>
 
-    <nav id='navigation-menu'>
-      <ul>
-        <li class='nav-menu-item'>
-          <a href="#">
-            <img src='assets/overview.svg' alt='overview'>
-            Overview</a>
-        </li>
-        <li class='nav-menu-item'>
-          <a href="#">
-            <img src='assets/calendar.svg' alt='tasks'>
-            Tasks
-          </a>
-        </li>
-        <li class='nav-menu-item'>
-          <a href="#">
-            <img src='assets/file.svg' alt='documents'>
-            Documents
-          </a>
-        </li>
-        <li class='nav-menu-item nav-menu-item--active'>
-          <a href="#">
-            <img src='assets/files.svg' alt='notes'>
-            Notes
-          </a>
-        </li>
-        <li class='nav-menu-item'>
-          <a href="#">
-            <img src='assets/graph.svg' alt='output'>
-            Output
-          </a>
-        </li>
-        <li class='nav-menu-item'>
-          <a href="#">
-            <img src='assets/support.svg' alt='support'>
-            Support
-          </a>
-        </li>
-      </ul>
-    </nav>
-    <hr class='sidebar-divider' />
+      <nav id='navigation-menu'>
+        <ul>
+          <li class='nav-menu-item'>
+            <a href='#'>
+              <img src='assets/overview.svg' alt='overview'>
+              Overview</a>
+          </li>
+          <li class='nav-menu-item'>
+            <a href='#'>
+              <img src='assets/calendar.svg' alt='tasks'>
+              Tasks
+            </a>
+          </li>
+          <li class='nav-menu-item'>
+            <a href='#'>
+              <img src='assets/file.svg' alt='documents'>
+              Documents
+            </a>
+          </li>
+          <li class='nav-menu-item active'>
+            <a href='#'>
+              <img src='assets/files.svg' alt='notes'>
+              Notes
+            </a>
+          </li>
+          <li class='nav-menu-item'>
+            <a href='#'>
+              <img src='assets/graph.svg' alt='output'>
+              Output
+            </a>
+          </li>
+          <li class='nav-menu-item'>
+            <a href='#'>
+              <img src='assets/support.svg' alt='support'>
+              Support
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <hr class='sidebar-divider' />
 
-    <section  id='note-types'>
-      <ul>
-        <li>
-          <div class='note-type-color' data-color='projects'></div>
-          <p>Projects</p>
-        </li>
-        <li>
-          <div class='note-type-color' data-color='business'></div>
-          <p>Business</p>
-        </li>
-        <li>
-          <div class='note-type-color' data-color='personal'></div>
-          <p>Personal</p>
-        </li>
-        <li>
-          <button>
-            <img src='assets/plus.svg' alt='notes'>
-            Add new
-          </button>
-        </li>
-      </ul>
-    </section>
+      <section  id='note-types'>
+        <ul>
+          <li>
+            <div class='note-type-color' data-color='projects'></div>
+            <p>Projects</p>
+          </li>
+          <li>
+            <div class='note-type-color' data-color='business'></div>
+            <p>Business</p>
+          </li>
+          <li>
+            <div class='note-type-color' data-color='personal'></div>
+            <p>Personal</p>
+          </li>
+          <li>
+            <button>
+              <img src='assets/plus.svg' alt='notes'>
+              Add new
+            </button>
+          </li>
+        </ul>
+      </section>
 
-    <hr class='sidebar-divider' />
+      <hr class='sidebar-divider' />
 
-    <footer>
-      <div id='socials'>
-        <a href="https://www.facebook.com/simplytech.co" target='_blank'>
-          <img src='assets/facebook.svg' alt='facebook'>
-        </a>
-        <a href="https://x.com/CodingSimply" target='_blank'>
-          <img src='assets/twitter.svg' alt='twitter'>
-        </a>
-        <a href="https://www.linkedin.com/company/simply-technologies" target='_blank'>
-          <img src='assets/linkedin.svg' alt='linkedin'>
-        </a>
-      </div>
-      <p id='footer-text'>2025 All rights reserved</p>
-    </footer>
-  </aside>
-
-  <main>
-    <header class='main-header'>
-      <div class='search-bar'>
-        <label for='search-input'><img src='assets/search.svg' alt='Search'></label>
-        <input id="search-input" type='text' placeholder='Search'>
-      </div>
-      <div class='user-info'>
-        <img src='assets/user-avatar.jpeg' alt='User Avatar' class='user-avatar'>
-        <span>Hello, Peter!</span>
-        <div id='notifications'>
-          <img src='assets/bell.svg' alt='Notifications'>
-          <span id='unseen-notification'></span>
+      <footer>
+        <div id='socials'>
+          <a href='https://www.facebook.com/simplytech.co' target='_blank'>
+            <img src='assets/facebook.svg' alt='facebook'>
+          </a>
+          <a href='https://x.com/CodingSimply' target='_blank'>
+            <img src='assets/twitter.svg' alt='twitter'>
+          </a>
+          <a href='https://www.linkedin.com/company/simply-technologies' target='_blank'>
+            <img src='assets/linkedin.svg' alt='linkedin'>
+          </a>
         </div>
-      </div>
-    </header>
-  </main>
-</div>
+        <p id='footer-text'>2025 All rights reserved</p>
+      </footer>
+    </aside>
+
+    <main>
+      <header class='main-header'>
+        <div class='search-bar'>
+          <label for='search-input'><img src='assets/search.svg' alt='Search'></label>
+          <input id='search-input' type='text' placeholder='Search'>
+        </div>
+        <div class='user-info'>
+          <img src='assets/user-avatar.jpeg' alt='User Avatar' class='user-avatar'>
+          <span>Hello, Peter!</span>
+          <div id='notifications'>
+            <img src='assets/bell.svg' alt='Notifications'>
+            <span id='unseen-notification'></span>
+          </div>
+        </div>
+      </header>
+
+      <section id='notes-section'>
+        <div id='filters-section'>
+          <div class='filters'>
+            <button class='filter-btn active'>All</button>
+            <button class='filter-btn'>Projects</button>
+            <button class='filter-btn'>Business</button>
+            <button class='filter-btn'>Personal</button>
+          </div>
+          <button>
+            <img src='assets/plus-circle.svg' alt='Add Notes'>
+            Add new note
+          </button>
+        </div>
+      </section>
+    </main>
+  </div>
 </body>
 </html>
