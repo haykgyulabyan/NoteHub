@@ -8,7 +8,6 @@
     --light-gray: #FBFBFB;
     --medium-gray: #D0D0D0;
     --dark-gray: #858499;
-    --warm-beige: #C3C1BE;
     --light-purpule: #9892d3;
     --medium-purpule: #8881d8;
     --dark-purpule: #6a61bf;
@@ -62,7 +61,7 @@ header {
 }
 
 #navigation-menu {
-    padding: 25px 0;
+    margin-bottom: 25px;
 }
 
 .nav-menu-item {
@@ -124,6 +123,7 @@ header {
     width: 10px;
     height: 10px;
     margin-right: 12px;
+    flex-shrink: 0;
 }
 
 [data-color="projects"] {
@@ -256,6 +256,86 @@ main {
 .filter-btn:hover {
     background-color: var(--light-purpule);
     color: var(--white);
+}
+
+.notes-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 36px 0 10px;
+    padding-right: 20px;
+    height: calc(100vh - 230px);
+    overflow-y: scroll;
+}
+
+.note-card {
+    width: 250px;
+    height: 250px;
+    background-color: white;
+    border: 1px solid var(--medium-gray);
+    border-radius: 4px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.note-card span {
+    font-size: 12px;
+    color: var(--dark-gray);
+    margin-bottom: 10px;
+}
+
+.card-title {
+    display: flex;
+    align-items: flex-start;
+}
+
+.card-title .note-type-color {
+    margin-top: 4px;
+}
+
+.note-card h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.note-card p {
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.note-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.notes-grid::-webkit-scrollbar {
+    width: 8px;
+}
+
+.notes-grid::-webkit-scrollbar-button {
+    display: none;
+}
+
+.notes-grid::-webkit-scrollbar-thumb {
+    background: var(--medium-purpule);
+    border-radius: 4px;
+}
+
+.notes-grid::-webkit-scrollbar-thumb:hover {
+    background: var(--dark-purpule);
+}
+
+.notes-grid {
+    scrollbar-width: thin;
+    scrollbar-color: var(--medium-purpule) transparent;
 }
 
 
