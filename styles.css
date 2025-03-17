@@ -26,12 +26,14 @@ a {
     background-color: var(--light-gray);
     font-family: Inter, sans-serif;
     display: flex;
+    min-height: 100vh;
 }
 
 .sidebar {
     width: 250px;
     background-color: var(--medium-purpule);
     color: var(--white);
+    position: relative;
 }
 
 header {
@@ -139,7 +141,10 @@ header {
 }
 
 footer {
+    position: absolute;
     padding: 24px;
+    bottom: 0;
+    left: 0;
 }
 
 #socials {
@@ -259,14 +264,17 @@ main {
 }
 
 .notes-grid {
+    padding-right: 20px;
+    height: calc(100vh - 185px);
+    overflow-y: scroll;
+}
+
+.flex-container {
     display: flex;
     gap: 20px;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-wrap: wrap;
     margin: 36px 0 10px;
-    padding-right: 20px;
-    height: calc(100vh - 230px);
-    overflow-y: scroll;
 }
 
 .note-card {
